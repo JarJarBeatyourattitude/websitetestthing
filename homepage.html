@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home - Seet Social</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+            color: #00aced;
+        }
+
+        #title-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        #title-box a {
+            color: rgb(153, 0, 224);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a.button {
+            text-decoration: none;
+            color: #00aced;
+            background-color: rgb(114, 103, 103);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        a.button:hover {
+            background-color: #0084b4;
+            color: #333;
+        }
+
+        a.button:active {
+            background-color: #00aced;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="title-box">
+        <a href="{{ url_for('homepage') }}">Seet Social</a>
+    </div>
+    <h1>Welcome to Seet Social!</h1>
+    <div class="buttons">
+        <a href="{{ url_for('signup') }}" class="button">Sign Up</a>
+        <a href="{{ url_for('login') }}" class="button">Log In</a>
+    </div>
+</body>
+</html>
